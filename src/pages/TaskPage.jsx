@@ -8,7 +8,7 @@ function TaskPage(){
     const navigate = useNavigate();
 
     function backToHome(){
-        return navigate("/home")
+        return navigate("/")
     }
 
     return (
