@@ -7,7 +7,7 @@ function AddTask({onAddTaskSubmit}){
     const [description, setDescription] = useState("")
 
     return (
-        <div className="text-gray-800 bg-slate-300 font-mono p-6  rounded-sm shadow flex flex-col gap-2">
+        <div className="text-gray-800 bg-stone-50 font-sans p-6  rounded-md shadow-sm flex flex-col gap-2 w-[100%]">
             <Input 
                 type="text" 
                 placeholder="Digite o titulo da tarefa" 
@@ -21,7 +21,7 @@ function AddTask({onAddTaskSubmit}){
                 onChange={(event) => setDescription(event.target.value)}
             />
             <button  
-                className="bg-slate-500 text-slate-800 py-2 rounded-sm font-medium"
+                className="bg-blue-400 py-2 font-bold rounded-md text-slate-100"
                 onClick={() => {
                     if(!(title.trim() && description.trim())) return alert("Fields Empty")
                     onAddTaskSubmit(title, description)

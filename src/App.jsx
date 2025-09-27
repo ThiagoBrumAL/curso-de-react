@@ -51,10 +51,10 @@ function App(){
   }
 
   return (
-    <div className="max-w-[80%] h-screen bg-slate-500 flex justify-center p-6">
-      <div className="min-w-[100] space-y-4">
+    <div id="teste" className="flex justify-center my-10">
+      <div className="space-y-4">
         <Title>
-          Gerenciador de tarefas
+          Gerenciador by Brum
         </Title>
         <AddTask onAddTaskSubmit={onAddTaskSubmit}/>
         <Tasks tasks={tasks} onTaskClick={onTaskClick} onDeleteTaskClick={onDeleteTaskClick}/>
