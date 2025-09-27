@@ -30,7 +30,7 @@ function Tasks({tasks, onDeleteTaskClick, onTaskClick}){
                     onClick={() => onDeleteTaskClick(t.id)} 
                 >
                     <TrashIcon/>
-                </ButtonIcon>
+                 </ButtonIcon>
             </li>
         )}
         </ul>

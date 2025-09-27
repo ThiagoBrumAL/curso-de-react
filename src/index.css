@@ -1,3 +1,18 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+body{
+    margin: 0;
+    padding: 0;
+    min-height: 100dvh;
+    background-color: oklch(55.4% 0.046 257.417);
+    display: flex;
+    justify-content: center;
+}
+
+#root{
+    display: flex;
+    justify-content: center;
+}
