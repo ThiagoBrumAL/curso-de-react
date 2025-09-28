@@ -12,18 +12,18 @@ function TaskPage(){
     }
 
     return (
-        <div className="w-screen h-screen bg-slate-500 p-6 flex flex-col items-center">
-            <div className="w-[500px] space-y-4">
-                <div className="flex justify-between">
-                    <button className="text-slate-800 bg-slate-200 py-2 px-10 rounded-md font-medium" onClick={() => backToHome()}>Retornar</button>
+        <div className=" p-6 flex flex-col items-center">
+            <div className=" space-y-4 flex flex-col">
+                <div>
                     <Title>
                         Detalhes da Tarefa
                     </Title>
                 </div>
-                <div className="bg-slate-900 p-6 rounded-md">
-                    <h1 className="text-red-50 text-xl">{title}</h1>
-                    <h2 className="text-sky-200 text-lg">{description}</h2>
+                <div className="bg-stone-50 p-6 rounded-md">
+                    <h1 className="text-gray-500 font-bold bg-yellow-300 text-xl">&nbsp;&nbsp;{title}&nbsp;&nbsp;</h1>
+                    <h2 className="text-gray-600 text-lg my-4">{description}</h2>
                 </div>
+                <button className="text-slate-50 bg-blue-400 py-2 px-10 rounded-md font-medium w-full" onClick={() => backToHome()}>Retornar</button>
             </div>
         </div>
     )
